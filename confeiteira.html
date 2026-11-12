@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Preço Doce: Guia de Precificação para Confeiteira e Doceira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8f6;--soft:#fde8e4;--card:#fff;--line:#f4d3cc;--ink:#3a1f1a;--muted:#7a5a52;--acc:#c2185b;--acc-d:#9c1049;--on-acc:#fff;--foot:#3a1f1a;--foot-t:#fbeee9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1210;--soft:#2a1a17;--card:#2f1d19;--line:#4a2f29;--ink:#fbeee9;--muted:#c9a9a0;--acc:#ff6fa5;--acc-d:#ff9cc2;--on-acc:#2a0a16;--foot:#150b09}}
+:root[data-theme="dark"]{--bg:#1d1210;--soft:#2a1a17;--card:#2f1d19;--line:#4a2f29;--ink:#fbeee9;--muted:#c9a9a0;--acc:#ff6fa5;--acc-d:#ff9cc2;--on-acc:#2a0a16;--foot:#150b09}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:480px;margin:0 auto;padding:0 20px}
+section{padding:44px 0}.alt{background:var(--soft)}
+h1,h2,h3{line-height:1.1;margin:0;letter-spacing:-.02em}
+h1{font-size:2.05rem;font-weight:800;text-align:center}h2{font-size:1.65rem;font-weight:800;text-align:center}
+.g{color:var(--acc)}.sub{text-align:center;color:var(--muted);margin:14px 0 0}
+.top{background:var(--acc);color:var(--on-acc);text-align:center;font-weight:800;font-size:.88rem;padding:11px}
+.pill{display:block;width:fit-content;max-width:100%;text-align:center;margin:12px auto 0;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:7px 16px;font-size:.85rem;font-weight:700}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:800;font-size:1.05rem;padding:17px 20px;border-radius:99px;background:var(--acc);color:var(--on-acc);box-shadow:0 6px 18px rgba(194,24,91,.32);margin-top:26px}
+.btn.off{background:var(--muted);box-shadow:none;pointer-events:none}
+.micro{text-align:center;color:var(--muted);font-size:.82rem;margin-top:12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 6px;text-align:center;font-size:.78rem;color:var(--muted)}
+.stat b{display:block;font-size:1.5rem;color:var(--acc-d);font-weight:800}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;margin-top:16px}
+.card h3{font-size:1.1rem;margin-bottom:10px}
+ul{list-style:none;margin:0;padding:0}li{padding:7px 0 7px 26px;position:relative;font-size:.95rem}
+li::before{content:"✓";position:absolute;left:0;color:var(--acc);font-weight:800}
+.steps{counter-reset:s;margin-top:20px}.steps li{padding:14px 0 14px 54px;border-bottom:1px solid var(--line)}
+.steps li:last-child{border:0}.steps li::before{counter-increment:s;content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--acc);color:var(--on-acc);display:flex;align-items:center;justify-content:center;font-weight:800;left:0;top:11px}
+.steps b{display:block}
+.mod{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.mod:last-child{border:0}
+.mod i{flex:none;width:34px;height:34px;border-radius:12px;background:var(--soft);color:var(--acc-d);font-style:normal;font-weight:800;display:flex;align-items:center;justify-content:center}
+.mod b{display:block;font-size:.97rem}.mod span{font-size:.86rem;color:var(--muted)}
+.tbl{background:var(--bg);border:1px dashed var(--acc);border-radius:16px;padding:6px 16px;font-size:.92rem}
+.tbl div{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.tbl div:last-child{border:0;font-weight:800;color:var(--acc-d)}
+.calc label{display:block;font-size:.8rem;font-weight:700;margin:12px 0 5px}.calc label:first-of-type{margin-top:0}
+.calc input{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.cr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.res{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:16px}
+.res div{background:var(--soft);border-radius:14px;padding:12px 6px;text-align:center;font-size:.7rem;color:var(--muted)}
+.res b{display:block;font-size:1.05rem;color:var(--acc-d);margin-top:4px}.res div:nth-child(2){background:var(--acc);color:var(--on-acc)}.res div:nth-child(2) b{color:var(--on-acc);font-size:1.15rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.two .card{margin:0;padding:16px}.two h3{font-size:.95rem}.two li{font-size:.85rem;padding-left:22px}
+.timer{background:linear-gradient(160deg,#6b2f22,#3a1712);color:#fff;border-radius:26px;padding:22px 16px;text-align:center;box-shadow:0 10px 26px rgba(58,23,18,.35)}
+.timer .t{font-weight:800;letter-spacing:.06em;font-size:.82rem}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.cd div{background:rgba(0,0,0,.25);border-radius:16px;padding:12px 0}
+.cd b{display:block;font-size:1.9rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.cd span{font-size:.65rem;letter-spacing:.08em;opacity:.85}
+.plan{background:var(--card);border:2px solid var(--acc);border-radius:26px;padding:28px 20px 24px;margin-top:22px;position:relative}
+.tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--acc);color:var(--on-acc);font-weight:800;font-size:.75rem;border-radius:99px;padding:4px 14px;white-space:nowrap}
+.plan h3{text-align:center;font-size:1.25rem}.plan .d{text-align:center;color:var(--muted);font-size:.9rem;margin:4px 0 14px}
+.price{text-align:center;font-size:3.4rem;font-weight:800;line-height:1}.price small{font-size:1.4rem;margin-right:4px}
+.once{text-align:center;color:var(--muted);font-size:.85rem;margin:6px 0 6px}
+.after{text-align:center;font-size:.88rem;background:var(--soft);border-radius:12px;padding:8px 10px;margin:0 0 14px}
+details{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin-top:10px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--acc-d);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:10px 0 0;color:var(--muted);font-size:.93rem}
+footer{background:var(--foot);color:var(--foot-t);padding:30px 0 110px;font-size:.8rem;text-align:center}
+footer p{margin:6px 0;opacity:.85}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s}
+.sticky.show{transform:none}.sticky .p{font-weight:800;font-size:1.2rem;line-height:1.1}.sticky .p small{display:block;font-size:.7rem;color:var(--muted);font-weight:500}
+.sticky .btn{margin:0;padding:13px 22px;font-size:.95rem;box-shadow:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sticky{transition:none}}
+</style>
+</head>
+<body>
+<div class="top" id="topbar">🔥 PROMOÇÃO DE LANÇAMENTO</div>
+
+<header><div class="wrap" style="padding-top:28px">
+<span class="pill">Guia em PDF + planilha de custo por receita</span>
+<h1 style="margin-top:22px">Pare de cobrar no chute. Saiba <span class="g">quanto cobrar</span> pelo seu bolo, brigadeiro e doces.</h1>
+<p class="sub" style="font-size:1.05rem">Um passo a passo simples para calcular o custo de cada receita e definir um preço que paga seus ingredientes, seu tempo e ainda deixa lucro.</p>
+<a class="btn" id="herobtn" href="#plano">QUERO ACESSO AGORA</a>
+<p class="micro">Acesso imediato · Pagamento seguro</p>
+</div></header>
+
+<section><div class="wrap">
+<h2>Isso acontece com <span class="g">você</span>?</h2>
+<div class="card"><ul>
+<li>Cobra “o que os outros cobram” sem saber seu custo</li>
+<li>Vende bastante, mas no fim do mês o dinheiro não sobra</li>
+<li>Os ingredientes sobem e você não sabe quando reajustar</li>
+<li>Não conta o seu tempo, a embalagem e o gás no preço</li>
+<li>Tem vergonha de passar o valor e acaba dando desconto</li>
+</ul></div></div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Veja um <span class="g">exemplo</span></h2>
+<p class="sub">Veja como o preço sai de uma conta, e não de um palpite.</p>
+<div class="card"><div class="tbl">
+<div><span>Ingredientes da receita</span><span>R$ 45,00</span></div>
+<div><span>Embalagem e outros</span><span>R$ 8,00</span></div>
+<div><span>Seu tempo (2 h × R$ 15,00)</span><span>R$ 30,00</span></div>
+<div><span>Rendimento</span><span>12 unidades</span></div>
+<div><span>Margem de lucro desejada</span><span>30%</span></div>
+</div>
+<div class="res"><div>Custo por unidade<b>R$ 6,92</b></div><div>Preço sugerido<b>R$ 9,88</b></div><div>Lucro por unidade<b>R$ 2,96</b></div></div>
+<p class="micro">Exemplo ilustrativo. No guia e na planilha você faz isso com as suas receitas.</p></div></div></section>
+
+<section><div class="wrap">
+<h2>Como <span class="g">funciona</span></h2>
+<ul class="steps card">
+<li><b>Você garante o acesso</b>Pagamento único e seguro.</li>
+<li><b>Recebe o guia e a planilha por e-mail</b>Na mesma hora, sem esperar.</li>
+<li><b>Preenche com suas receitas</b>Coloca seus custos e descobre o preço de cada doce.</li>
+</ul></div></section>
+
+<section class="alt"><div class="wrap">
+<h2>O que você vai <span class="g">aprender</span></h2>
+<p class="sub">6 módulos diretos, com exemplos de bolo, brigadeiro e doces.</p>
+<div class="stats"><div class="stat"><b>6</b>módulos</div><div class="stat"><b>1</b>planilha de custo</div><div class="stat"><b>3</b>exemplos prontos</div></div>
+<div class="card">
+<div class="mod"><i>1</i><div><b>Por que cobrar no chute faz perder dinheiro</b><span>Entenda onde o lucro escapa.</span></div></div>
+<div class="mod"><i>2</i><div><b>Custo dos ingredientes por receita</b><span>Rendimento, perdas e quanto cada porção custa.</span></div></div>
+<div class="mod"><i>3</i><div><b>Custos escondidos</b><span>Embalagem, gás, energia e outros gastos que ninguém conta.</span></div></div>
+<div class="mod"><i>4</i><div><b>Quanto vale o seu tempo</b><span>Como colocar a mão de obra no preço.</span></div></div>
+<div class="mod"><i>5</i><div><b>Margem de lucro e preço final</b><span>A fórmula simples para chegar ao valor certo.</span></div></div>
+<div class="mod"><i>6</i><div><b>Passar o preço e reajustar</b><span>Como apresentar o valor ao cliente e atualizar quando o ingrediente sobe.</span></div></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2>Veja como é <span class="g">por dentro</span></h2>
+<p class="sub">Exemplo de como a planilha organiza o custo de uma receita de brigadeiro.</p>
+<div class="card"><div class="tbl">
+<div><span>Ingredientes</span><span>R$ 30,00</span></div>
+<div><span>Embalagem</span><span>R$ 10,00</span></div>
+<div><span>Seu tempo (1,5 h)</span><span>R$ 22,50</span></div>
+<div><span>Custo total da receita</span><span>R$ 62,50</span></div>
+</div>
+<p class="micro" style="text-align:left">Valores ilustrativos. Na planilha você coloca os seus e ela calcula o resto.</p></div>
+<div class="two">
+<div class="card"><h3>É pra você se…</h3><ul><li>Vende doces ou bolos em casa</li><li>Está começando a vender</li><li>Quer lucrar mais</li></ul></div>
+<div class="card"><h3>Importante</h3><ul><li>Planilha editável</li><li>Você usa seus próprios valores</li><li>O preço final é decisão sua</li></ul></div>
+</div></div></section>
+
+<section class="alt" id="plano"><div class="wrap">
+<div class="timer"><div class="t" id="tlabel">ESSA PROMOÇÃO EXPIRA EM:</div>
+<div class="cd"><div><b id="d">00</b><span>DIAS</span></div><div><b id="h">00</b><span>HORAS</span></div><div><b id="m">00</b><span>MIN</span></div><div><b id="s">00</b><span>SEG</span></div></div></div>
+<h2 style="margin-top:30px">Garanta seu <span class="g">acesso</span></h2>
+<p class="sub">Preço promocional de lançamento, com pagamento único.</p>
+<div class="plan"><span class="tag">PROMOÇÃO DE LANÇAMENTO</span><h3>Guia + planilha de custo</h3><p class="d">Tudo o que está nesta página</p>
+<div class="price"><small>R$</small>17,90</div><p class="once">pagamento único · <span id="pdate">preço promocional</span></p>
+<p class="after">Depois da promoção, o preço passa a ser <b>R$ 30,00</b>.</p>
+<ul><li>Guia em PDF com os 6 módulos</li><li>Planilha de custo por receita (editável)</li><li>Exemplos de bolo, brigadeiro e doces</li><li>Acesso imediato por e-mail</li></ul>
+<a class="btn buy" id="buy" href="#plano">QUERO APROVEITAR A PROMOÇÃO</a>
+<p class="micro">Acesso imediato no seu e-mail</p></div>
+<p class="micro">Produto digital de caráter educacional.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Ficou com alguma <span class="g">dúvida?</span></h2>
+<details><summary>Pra quem é esse material?</summary><p>Para quem faz bolos, doces e salgados em casa ou em pequena escala e quer parar de cobrar no chute.</p></details>
+<details><summary>A planilha é editável?</summary><p>Sim. Você coloca os seus ingredientes, quantidades e valores, e ela calcula o custo e o preço de cada receita.</p></details>
+<details><summary>Preciso saber de matemática ou Excel?</summary><p>Não. O guia explica cada passo em linguagem simples, e a planilha faz as contas.</p></details>
+<details><summary>Serve para outros produtos além de doces?</summary><p>Sim. O método vale para qualquer produto feito por receita, como salgados, marmitas e pães.</p></details>
+<details><summary>Em que formato vem o material?</summary><p>O guia vem em PDF e a planilha em arquivo editável. Você recebe o acesso por e-mail logo após a confirmação do pagamento.</p></details>
+<details><summary>Como funciona o pagamento?</summary><p>Pagamento único e seguro, em ambiente de pagamento protegido. Sem mensalidade.</p></details>
+<a class="btn buy" href="#plano">QUERO COMEÇAR AGORA</a>
+</div></section>
+
+<footer><div class="wrap">
+<p>Produto digital de caráter educacional.</p>
+<p>Os resultados dependem da aplicação do conteúdo e dos custos de cada pessoa.</p>
+<p>© 2026 · Todos os direitos reservados</p>
+</div></footer>
+
+<div class="sticky" id="sticky"><div class="p"><small>Promoção · depois R$ 30,00</small>R$ 17,90</div><a class="btn buy" href="#plano">QUERO O GUIA</a></div>
+
+<script>
+/* Data e hora reais em que a promoção termina. Altere aqui e só mantenha se for cumprir. */
+var END_AT = new Date('2026-11-16T23:59:59-03:00').getTime();
+function pad(n){return n<10?'0'+n:''+n}
+var ed=new Date(END_AT),ds=pad(ed.getDate())+'/'+pad(ed.getMonth()+1);
+document.getElementById('topbar').textContent='🔥 PROMOÇÃO DE LANÇAMENTO ATÉ '+ds;
+document.getElementById('pdate').textContent='promoção até '+ds;
+function tick(){
+  var diff=END_AT-Date.now();
+  if(diff<=0){
+    ['d','h','m','s'].forEach(function(i){document.getElementById(i).textContent='00'});
+    document.getElementById('tlabel').textContent='PROMOÇÃO ENCERRADA';
+    document.getElementById('topbar').textContent='Promoção de lançamento encerrada';
+    document.querySelectorAll('.buy').forEach(function(b){b.classList.add('off');b.textContent='PROMOÇÃO ENCERRADA'});
+    return;
+  }
+  var t=Math.floor(diff/1000);
+  document.getElementById('d').textContent=pad(Math.floor(t/86400));
+  document.getElementById('h').textContent=pad(Math.floor(t%86400/3600));
+  document.getElementById('m').textContent=pad(Math.floor(t%3600/60));
+  document.getElementById('s').textContent=pad(t%60);
+  setTimeout(tick,1000);
+}
+tick();
+/* Link de pagamento: cole entre as aspas. Sem link, o botão só rola a página. */
+var LINK='';
+document.querySelectorAll('.buy').forEach(function(b){b.href=LINK||'#plano'});
+/* Barra fixa: aparece depois do primeiro botão e some quando o plano está na tela */
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var st=document.getElementById('sticky'),hero=false,plan=false;
+  function upd(){st.classList.toggle('show',!hero&&!plan&&window.scrollY>200)}
+  new IntersectionObserver(function(e){hero=e[0].isIntersecting;upd()}).observe(document.getElementById('herobtn'));
+  new IntersectionObserver(function(e){plan=e[0].isIntersecting;upd()}).observe(document.getElementById('plano'));
+  addEventListener('scroll',upd,{passive:true});
+})();
+</script>
+</body>
+</html>
